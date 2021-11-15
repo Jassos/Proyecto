@@ -1,0 +1,22 @@
+        .Oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .pd-top-5 {
+            padding-top: 5em;
+        }
+        
+        .pd-5 {
+            padding-top: .5em;
+            padding-bottom: .5em;
+        }
+        
+        .pd-top-3 {
+            padding-top: 3em;
+        }
+        
+        .linea {
+            background-color: orangered;
+            padding-top: .5em;
+            padding-bottom: .5em;
+        }
