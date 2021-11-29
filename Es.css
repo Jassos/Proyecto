@@ -20,3 +20,15 @@
             padding-top: .5em;
             padding-bottom: .5em;
         }
+        
+        .BD {
+            background-color: lightskyblue;
+        }
+        
+        .BD-p {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            text-align: center;
+        }

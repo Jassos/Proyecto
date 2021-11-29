@@ -42,6 +42,8 @@
         </div>
     </div>
 
+
+
     <div class="bg-primary">
         <div class="container pd-top-5">
             <div class="row">
@@ -62,14 +64,35 @@
     </div>
 
     <nav class="nav bg-dark pd-5">
-        <a class=" text-white nav-link " href="# ">Home</a>
+        <a class=" text-white nav-link " href="#">Home</a>
         <a class="text-white nav-link " href="https://www.minecraftforum.net/ " target="blank ">Forums</a>
         <a class="text-white nav-link " href="https://www.minecraft.net/es-mx/download/server " target="blank ">Server</a>
         <a class="text-white nav-link " href="https://jassos.github.io/Trabajo/ " target="blank ">High Center</a>
         <a class="text-white nav-link " href="https://www.curseforge.com/minecraft/mc-mods " target="blank ">Mods</a>
-        <a class="text-white nav-link " href="# " target="blank ">Jiji no se</a>
+        <a class="text-white nav-link " href="#" target="blank ">Jiji no se</a>
     </nav>
 </body>
+
+<!--Cuadro donde se muestra mi nombre-->
+
+<div name="Nombre" class="Jasso h5 pd-top-3 text-center">
+</div>
+
+<!--Cuadro de Script del Nombre-->
+
+</div>
+<script>
+    $(document).ready(function() {
+        $(".Jasso").text("Jasso Fernandez Diego Alejandro 5-W")
+        if ($(".Jasso").hasClass("saludo")) {
+            $(".Jasso").show(3000)
+        }
+    });
+    $(".Jasso").click(function() {
+        $(".Jasso").hide(1000)
+    })
+</script>
+</div>
 
 <div class="container ">
     <div class="pd-top-3 row ">
@@ -83,7 +106,7 @@
                 <div class="card-body ">
                     <h5 class="card-title "><img class="align-top " src="https://media.discordapp.net/attachments/903186006373720074/903190019722870844/caja.png? " width="25em " height="25em "> Minecraft Registration</h5>
                     <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quasi distinctio obcaecati incidunt numquam, accusamus temporibus quidem quae officiis debitis nobis iure nam voluptatem quos fugit dolore repellendus, alias sit.</p>
-                    <a href="https://www.minecraft.net/es-es " target="blank " class="btn btn-primary ">Registration
+                    <a target="blank " class="btn btn-primary" onclick="Registro()">Registration
                         Guide</a>
                 </div>
             </div>
@@ -111,5 +134,12 @@
     </div>
 
 </div>
+
+
+<script>
+    function Registro() {
+        location.href = "https://localhost/Phpxd/Registro.php"
+    }
+</script>
 
 </html>
