@@ -1,11 +1,11 @@
 <?php
 include("Conexion.php");
-$con=conectar();
+$con = conectar();
 
-$sql="SELECT * FROM tabla";
-$query=mysqli_query($con,$sql);
+$sql = "SELECT * FROM tabla";
+$query = mysqli_query($con, $sql);
 
-$row=mysqli_fetch_array($query);
+$row = mysqli_fetch_array($query);
 ?>
 
 <!DOCTYPE html>
@@ -37,8 +37,15 @@ $row=mysqli_fetch_array($query);
 
         <p>Edad <br><input type="text" name="Edad" /></p>
 
-        <input type="submit" class="btn btn-success" value="Guardar">
-        <a href="Registro.php" class="btn btn-primary ">Eliminar</a>
+        <div class="form-floating">
+            <textarea name="Comentario" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comentario</label>
+        </div>
+
+        <div class="pd-top-3">
+            <input type="submit" class="btn btn-success" value="Registrarse">
+            <a href="Registro.php" class="btn btn-primary ">Eliminar</a>
+        </div>
     </form>
 
 
